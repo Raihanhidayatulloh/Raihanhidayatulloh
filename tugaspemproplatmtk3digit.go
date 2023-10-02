@@ -1,6 +1,5 @@
 package main
 import "fmt"
-
 func main() {
 	var x int
 
@@ -11,9 +10,9 @@ func main() {
 		fmt.Println("Masukkan bilangan bulat positif kurang dari 999 yang valid.")
 		return
 	} else {
+		d1 := x / 100
+		d2 := (x / 10) % 10
 		d3 := x % 10
-		d2 := x % 10
-		d1 := x % 10
 
 		fmt.Printf("Digit pertama: %d\n", d1)
 		fmt.Printf("Digit kedua: %d\n", d2)
